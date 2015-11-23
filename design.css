@@ -1,0 +1,80 @@
+body {
+    background-image: url("https://media.timeout.com/images/101723063/image.jpg");
+    font-family: lucida console;
+    background-size: cover;
+
+}
+
+#qs {
+  padding-left: 5%;
+}
+#number1,#number2,#number3{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  width: 75px;
+}
+
+#container {
+    border-radius: 5px;
+    background-color: #b0c4d9;
+    width: 60%;
+    top: 25%;
+    left: 20%;
+    right: 20%;
+    height:35%; 
+    min-height: 350px;
+    min-width: 380px;
+    position: fixed;
+    margin-bottom: 30%; 
+
+}
+#successtotal { 
+  font-size: large;
+}
+
+#success { 
+  font-size: x-large;
+}
+#tiptotal {
+  color: white;
+  text-align: center;
+  
+}
+
+#b {
+    width: 40;
+    height: 10;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 10%;
+}
+
+h1 {
+  padding-top: 10px;
+    color: cornsilk;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+input {
+    border-radius: 5px;
+}
+
+#submitButton {
+  width: 75px;
+  height: 35px;
+  font-size: large;
+}
+
+button {
+  padding:5px;
+  border-radius: 10px;
+  background-color: cornsilk;
+  /* border: 2px solid white; */
+  color:#b0c4d9;
+  text-decoration:none;
+}
+
+
+
