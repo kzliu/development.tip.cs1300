@@ -7,6 +7,8 @@ body {
 }
 
 #qs {
+  text-align: right;
+  padding-right: 30%;
   padding-left: 5%;
 }
 #number1,#number2,#number3{
@@ -20,11 +22,11 @@ body {
 #container {
     border-radius: 5px;
     background-color: #b0c4d9;
-    width: 60%;
+    width: 50%;
     top: 25%;
-    left: 20%;
+    left: 25%;
     right: 20%;
-    height: 40%; 
+    height: 35%; 
     min-height: 335px;
     min-width: 450px;
     position: fixed;
@@ -32,21 +34,20 @@ body {
 
 }
 
-#success { 
-  font-size: x-large;
-}
+/*#success { 
+  font-size: large;
+}*/
 #tiptotal {
   color: white;
   text-align: center;
-  
+  font-size: large;
 }
 
 #b {
     width: 40;
     height: 10;
     text-align: right;
-    padding-top: 15px;
-    padding-right: 7%;
+    padding-right: 10%;
 }
 
 h1 {
