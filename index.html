@@ -6,12 +6,11 @@
 
 <body>
 
-
+<!-- form for html body  -->
   <div id="container">
     <h1 id="head"> Just the Tip! </h1>
     <div id="info">
      <form id="form1">
-
       <div id="qs">
         How much did your meal cost? <input id="number1" type="integer" size = "10" placeholder="cost">
         <br>
@@ -33,6 +32,7 @@
 
   <script>
 
+//change the header depending on whether they want to split the check of just tip
 function ChangeName(){
   if (document.getElementById("splitbill").checked) {
     document.getElementById("head").innerHTML = "Split the Check";
@@ -42,8 +42,8 @@ function ChangeName(){
   }
 }
 
-
-  function RunApp()
+//compute the tip
+function RunApp()
   {
     var cost, tip, ppl, input1;
         
@@ -56,7 +56,6 @@ function ChangeName(){
     ppl = input1.elements["number3"].value;
 
 
-
     if (cost == "" || tip == "" || ppl == "")
     {
         document.getElementById("tiptotal").innerHTML= "<p>You forgot to fill in one of the required fields." + "</p><br>";
@@ -67,12 +66,14 @@ function ChangeName(){
     }
     else
     {
+      //if they want to split bill
       if (document.getElementById("splitbill").checked){
         var total = parseFloat(cost)*(parseFloat(tip)/100.0 + 1.0)/parseFloat(ppl);
 
         document.getElementById("tiptotal").innerHTML= "<p id='success'>" + total.toFixed(2) + " per person for the check and tip. </p>";
       }
       else {
+        //if they want to only split the tip
         var total = parseFloat(cost)*(parseFloat(tip)/100.0)/parseFloat(ppl);
 
         document.getElementById("tiptotal").innerHTML= "<p id='success'>Tip " + total.toFixed(2) + " per person. </p>";
@@ -84,9 +85,6 @@ function ChangeName(){
   </script>
 
   
-
-
-
   </div>
 </body>
 
