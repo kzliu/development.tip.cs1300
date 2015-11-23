@@ -70,7 +70,7 @@ function ChangeName(){
       if (document.getElementById("splitbill").checked){
         var total = parseFloat(cost)*(parseFloat(tip)/100.0 + 1.0)/parseFloat(ppl);
 
-        document.getElementById("tiptotal").innerHTML= "<p id='successtotal'>" + total.toFixed(2) + " per person for the check and tip. </p>";
+        document.getElementById("tiptotal").innerHTML= "<p id='success'>" + total.toFixed(2) + " per person for the check and tip. </p>";
       }
       else {
         var total = parseFloat(cost)*(parseFloat(tip)/100.0)/parseFloat(ppl);
